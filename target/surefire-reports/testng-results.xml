@@ -1,0 +1,1776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="50" passed="43" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-27T20:11:58 MSK" name="Surefire suite" finished-at="2020-03-27T20:11:59 MSK" duration-ms="111">
+    <groups>
+      <group name="AddSubTests">
+        <method signature="TestingSub.testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" name="testDoubles" class="hw1.TestingSub"/>
+        <method signature="TestingSub.testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" name="testLongs" class="hw1.TestingSub"/>
+        <method signature="TestingSum.testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" name="testDoubles" class="hw1.TestingSum"/>
+        <method signature="TestingSum.testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" name="testLongs" class="hw1.TestingSum"/>
+      </group> <!-- AddSubTests -->
+      <group name="MulDivTests">
+        <method signature="TestingDiv.checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58]" name="checkDivideByZeroDouble" class="hw1.TestingDiv"/>
+        <method signature="TestingDiv.checkDivideByZeroLong()[pri:0, instance:hw1.TestingDiv@4550bb58]" name="checkDivideByZeroLong" class="hw1.TestingDiv"/>
+        <method signature="TestingDiv.testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" name="testDoubles" class="hw1.TestingDiv"/>
+        <method signature="TestingDiv.testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" name="testLongs" class="hw1.TestingDiv"/>
+        <method signature="TestingMul.testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" name="testDoubles" class="hw1.TestingMul"/>
+        <method signature="TestingMul.testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" name="testLongs" class="hw1.TestingMul"/>
+      </group> <!-- MulDivTests -->
+    </groups>
+    <test started-at="2020-03-27T20:11:58 MSK" name="Surefire test" finished-at="2020-03-27T20:11:59 MSK" duration-ms="111">
+      <class name="hw1.TestingSub">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0E-4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1.0E-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100.003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200.006]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12.3333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4.2222]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-16.5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123.32332]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-43.111111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[166.434431]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.0000000001111112E9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0000000001111112E9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2.0000000002222223E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-66666]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1000000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2000000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSub@223191a6]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- hw1.TestingSub -->
+      <class name="hw1.TestingDiv">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="checkDivideByZeroDouble" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="FAIL">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method TestingDiv.checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58] should have thrown an exception of type class java.lang.ArithmeticException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method TestingDiv.checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58] should have thrown an exception of type class java.lang.ArithmeticException
+at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivideByZeroDouble -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="checkDivideByZeroLong()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="checkDivideByZeroLong" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+at org.testng.internal.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:68)
+at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:731)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+Caused by: java.lang.NumberFormatException: Attempt to divide by zero
+at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+at hw1.TestingDiv.checkDivideByZeroLong(TestingDiv.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDivideByZeroLong -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-100003.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [-100003.0] but found [-0.100003]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [-100003.0] but found [-0.100003]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at hw1.TestingDiv.testDoubles(TestingDiv.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12.3333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.1111]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [4.1111] but found [4.1110999999999995]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [4.1111] but found [4.1110999999999995]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at hw1.TestingDiv.testDoubles(TestingDiv.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1000.0003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.01]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-100000.03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-10000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingDiv@4550bb58]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.TestingDiv -->
+      <class name="hw1.TestingMul">
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.25]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2.25] but found [2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2.25] but found [2.0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at hw1.TestingMul.testDoubles(TestingMul.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0E-4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-100003.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12.3333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12.3333]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [12.3333] but found [12.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [12.3333] but found [12.0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at hw1.TestingMul.testDoubles(TestingMul.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1000111.11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-5000555.55]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [-5000555.55] but found [-5000556.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [-5000555.55] but found [-5000556.0]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at hw1.TestingMul.testDoubles(TestingMul.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-10000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4900]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-10000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[700000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingMul@4ec4f3a0]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.TestingMul -->
+      <class name="hw1.TestingSum">
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0E-4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0E-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100.003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12.3333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-4.2222]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-16.5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123.32332]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[43.111111]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[166.434431]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDoubles(double, double, double)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testDoubles" data-provider="doubleTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1.0000000001111112E9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1.0000000001111112E9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2.0000000002222223E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoubles -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[66666]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-70]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-140]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="setUp" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLongs(long, long, long)[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="testLongs" data-provider="longTestData" finished-at="2020-03-27T20:11:59 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1000000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1000000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2000000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLongs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hw1.TestingSum@49139829]" started-at="2020-03-27T20:11:59 MSK" name="tearDown" finished-at="2020-03-27T20:11:59 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.TestingSum -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

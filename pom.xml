@@ -4,9 +4,90 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.epam.training.center</groupId>
     <artifactId>MariiaAtamas</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <java.source.version>1.8</java.source.version>
+        <java.target.version>1.8</java.target.version>
+
+        <testng.version>7.1.0</testng.version>
+        <maven.surefare.plugin.version>3.0.0-M4</maven.surefare.plugin.version>
+
+        <calculator.version>1.0</calculator.version>
+        <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.tat</groupId>
+            <artifactId>Calculator</artifactId>
+            <version>${calculator.version}</version>
+            <systemPath>${calculator.system.path}</systemPath>
+            <scope>system</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.surefare.plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>addSum</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                    <sute.xml>src/test/resources/hw1/AddSubTestingSuite.xml</sute.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>mulDiv</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <sute.xml>src/test/resources/hw1/MulDivTestingSuite.xml</sute.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>allTests</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <sute.xml>src/test/resources/hw1/MulDivTestingSuite.xml</sute.xml>
+            </properties>
+        </profile>
+
+    </profiles>
 
 </project>

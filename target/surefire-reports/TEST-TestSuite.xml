@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.859" tests="50" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\seata\IdeaProjects\MariiaAtamas\target\test-classes;C:\Users\seata\IdeaProjects\MariiaAtamas\target\classes;C:\Users\seata\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\seata\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\seata\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\seata\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\seata\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\seata\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\seata\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\seata\IdeaProjects\MariiaAtamas\src\test\resources\calculator-1.0.jar;"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.jetbrains.com/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Users\seata\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr\bin"/>
+    <property name="sun.java.command" value="C:\Users\seata\AppData\Local\Temp\surefire4002296918116810604\surefirebooter13099747002492702837.jar C:\Users\seata\AppData\Local\Temp\surefire4002296918116810604 2020-03-27T20-11-57_766-jvmRun1 surefire14367040958703812075tmp surefire_04356664058260546815tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\seata\IdeaProjects\MariiaAtamas\target\test-classes;C:\Users\seata\IdeaProjects\MariiaAtamas\target\classes;C:\Users\seata\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\seata\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\seata\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\seata\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\seata\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\seata\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar;C:\Users\seata\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\seata\IdeaProjects\MariiaAtamas\src\test\resources\calculator-1.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\seata"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="C:\Users\seata\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\seata\IdeaProjects\MariiaAtamas"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\seata\AppData\Local\Temp\surefire4002296918116810604\surefirebooter13099747002492702837.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.6+8-b520.43"/>
+    <property name="user.name" value="seata"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\seata\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://youtrack.jetbrains.com"/>
+    <property name="java.io.tmpdir" value="C:\Users\seata\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.6"/>
+    <property name="user.dir" value="C:\Users\seata\IdeaProjects\MariiaAtamas"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="idea.version2019.3.4" value="true"/>
+    <property name="java.library.path" value="C:\Users\seata\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\seata\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vendor" value="JetBrains s.r.o"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.6+8-b520.43"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="checkDivideByZeroDouble" classname="hw1.TestingDiv" time="0.007">
+    <failure message="&#10;Method TestingDiv.checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58] should have thrown an exception of type class java.lang.ArithmeticException" type="org.testng.TestException"><![CDATA[org.testng.TestException: 
+
+Method TestingDiv.checkDivideByZeroDouble()[pri:0, instance:hw1.TestingDiv@4550bb58] should have thrown an exception of type class java.lang.ArithmeticException
+]]></failure>
+  </testcase>
+  <testcase name="checkDivideByZeroLong" classname="hw1.TestingDiv" time="0.001">
+    <failure message="&#10;Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero" type="org.testng.TestException"><![CDATA[org.testng.TestException: 
+
+Expected exception of type class java.lang.ArithmeticException but got java.lang.NumberFormatException: Attempt to divide by zero
+	at hw1.TestingDiv.checkDivideByZeroLong(TestingDiv.java:57)
+]]></failure>
+  </testcase>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0.002"/>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0.001">
+    <failure message="expected [-100003.0] but found [-0.100003]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [-100003.0] but found [-0.100003]
+	at hw1.TestingDiv.testDoubles(TestingDiv.java:52)
+]]></failure>
+  </testcase>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0">
+    <failure message="expected [4.1111] but found [4.1110999999999995]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [4.1111] but found [4.1110999999999995]
+	at hw1.TestingDiv.testDoubles(TestingDiv.java:52)
+]]></failure>
+  </testcase>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingDiv" time="0.001"/>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0">
+    <failure message="expected [2.25] but found [2.0]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [2.25] but found [2.0]
+	at hw1.TestingMul.testDoubles(TestingMul.java:52)
+]]></failure>
+  </testcase>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0">
+    <failure message="expected [12.3333] but found [12.0]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [12.3333] but found [12.0]
+	at hw1.TestingMul.testDoubles(TestingMul.java:52)
+]]></failure>
+  </testcase>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingMul" time="0">
+    <failure message="expected [-5000555.55] but found [-5000556.0]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [-5000555.55] but found [-5000556.0]
+	at hw1.TestingMul.testDoubles(TestingMul.java:52)
+]]></failure>
+  </testcase>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingMul" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0.001"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0.001"/>
+  <testcase name="testLongs" classname="hw1.TestingSub" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0.001"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0.001"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testDoubles" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+  <testcase name="testLongs" classname="hw1.TestingSum" time="0"/>
+</testsuite>
