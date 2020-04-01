@@ -8,5 +8,9 @@
                 <include name="AddSubTests" />
             </run>
         </groups>
+        <classes>
+            <class name="hw1.TestingSum"></class>
+            <class name="hw1.TestingSub"></class>
+        </classes>
     </test>
 </suite>

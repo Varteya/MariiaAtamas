@@ -7,6 +7,7 @@
     <groupId>com.epam.training.center</groupId>
     <artifactId>MariiaAtamas</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <java.source.version>1.8</java.source.version>
@@ -19,6 +20,46 @@
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>addSum</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw1/AddSubTestingSuite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>mulDiv</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw1/MulDivTestingSuite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>allTests</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw1/MulDivTestingSuite.xml</suite.xml>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw1/grt.xml</suite.xml>
+            </properties>
+        </profile>
+
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -37,6 +78,10 @@
         </dependency>
     </dependencies>
 
+
+
+
+
     <build>
         <pluginManagement>
             <plugins>
@@ -44,6 +89,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven.surefare.plugin.version}</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <xmlFile>${suite.xml}</xmlFile>
+                        </suiteXmlFiles>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -52,42 +102,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+                    <source>${java.source.version}</source>
+                    <target>${java.target.version}</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>addSum</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                    <sute.xml>src/test/resources/hw1/AddSubTestingSuite.xml</sute.xml>
-            </properties>
-        </profile>
-        <profile>
-            <id>mulDiv</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <sute.xml>src/test/resources/hw1/MulDivTestingSuite.xml</sute.xml>
-            </properties>
-        </profile>
-        <profile>
-            <id>allTests</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <sute.xml>src/test/resources/hw1/MulDivTestingSuite.xml</sute.xml>
-            </properties>
-        </profile>
-
-    </profiles>
 
 </project>

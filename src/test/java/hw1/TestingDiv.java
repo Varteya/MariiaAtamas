@@ -1,23 +1,13 @@
 package hw1;
 
-import com.epam.tat.module4.Calculator;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
-
-public class TestingDiv {
-    private Calculator calculator;
-
-    @BeforeMethod
-    public void setUp () {
-        calculator = new Calculator();
-    }
+public class TestingDiv extends  BaseTest{
 
     @DataProvider
-    public static Object[][] longTestData () {
+    public Object[][] longTestData () {
         return new Object[][]{
                 {1, 1, 1},
                 {0, 10000, 0},
@@ -29,35 +19,44 @@ public class TestingDiv {
     }
 
     @Test(groups = {"MulDivTests"}, dataProvider = "longTestData")
-    public void testLongs (long firstAdd, long secondAdd, long expected){
-        long actual = calculator.div(firstAdd, secondAdd);
-        assertEquals(actual, expected);
+    public void testLongs (long a, long b, long expected){
+        doTest(a, b, expected);
+    }
+
+    @Override
+    public long operation (long a, long b) {
+        return calculator.div(a, b);
     }
 
     @DataProvider
-    public static Object[][] doubleTestData () {
+    public Object[][] doubleTestData () {
         return new Object[][]{
                 {1.5, 1.5, 1.0},
                 {6.0, 4.0, 1.5},
-                {100.003, -1000.0, -100003.0},
-                {-12.3333, -3.0, 4.1111},
+                {100.003, -1000.0, -0.100003},
+                {-12.33, -3.0, 4.11},
                 {100.0, 0.5, 200.0},
                 {-1000.0003, 0.01, -100000.03}
         };
     }
 
     @Test(groups = {"MulDivTests"}, dataProvider = "doubleTestData")
-    public void testDoubles (double firstAdd, double secondAdd, double expected) {
-        double actual = calculator.div(firstAdd, secondAdd);
-        assertEquals(actual, expected);
+    public void testDoubles (double a, double b, double expected) {
+        doTest(a, b, expected);
     }
 
-    @Test(expectedExceptions = ArithmeticException.class, groups = {"MulDivTests"})
+    @Override
+    public double operation (double a, double b) {
+        return calculator.div(a, b);
+    }
+
+
+    @Test(expectedExceptions = IllegalArgumentException.class, groups = {"MulDivTests"})
     public void checkDivideByZeroLong (){
         calculator.div(100, 0);
     }
 
-    @Test(expectedExceptions = ArithmeticException.class, groups = {"MulDivTests"})
+    @Test(expectedExceptions = IllegalArgumentException.class, groups = {"MulDivTests"})
     public void checkDivideByZeroDouble (){
         calculator.div(100.1, 0);
     }

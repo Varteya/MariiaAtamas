@@ -2,3 +2,4 @@ $ cat .gitignore
 
 /target
 /.idea
+/src/test/resources/calculator-1.0/META-INF

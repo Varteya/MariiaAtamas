@@ -8,6 +8,9 @@
                 <include name="MulDivTests" />
             </run>
         </groups>
-
+        <classes>
+            <class name="hw1.TestingMul"></class>
+            <class name="hw1.TestingDiv"></class>
+        </classes>
     </test>
 </suite>

@@ -1,23 +1,12 @@
 package hw1;
 
-import com.epam.tat.module4.Calculator;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
 
-public class TestingSum {
-    private Calculator calculator;
-
-    @BeforeMethod
-    public void setUp() {
-        calculator = new Calculator();
-    }
-
+public class TestingSum extends BaseTest {
     @DataProvider
-    public static Object[][] longTestData() {
+    public Object[][] longTestData() {
         return new Object[][]{
                 {1, 1, 2},
                 {0, 0, 0},
@@ -29,13 +18,17 @@ public class TestingSum {
     }
 
     @Test(groups = {"AddSubTests"}, dataProvider = "longTestData")
-    public void testLongs(long firstAdd, long secondAdd, long expected) {
-        long actual = calculator.sum(firstAdd, secondAdd);
-        assertEquals(actual, expected);
+    public void testLongs(long a, long b, long expected) {
+        doTest(a, b, expected);
+    }
+
+    @Override
+    protected long operation(long a, long b) {
+        return calculator.sum(a, b);
     }
 
     @DataProvider
-    public static Object[][] doubleTestData() {
+    public Object[][] doubleTestData() {
         return new Object[][]{
                 {1.5, 1.5, 3},
                 {0.0, 0.0001, 0.0001},
@@ -46,15 +39,14 @@ public class TestingSum {
         };
     }
 
-
     @Test(groups = {"AddSubTests"}, dataProvider = "doubleTestData")
-    public void testDoubles(double firstAdd, double secondAdd, double expected) {
-        double actual = calculator.sum(firstAdd, secondAdd);
-        assertEquals(actual, expected);
+    public void testDoubles(double a, double b, double expected) {
+        doTest(a, b, expected);
     }
 
-    @AfterMethod
-    public void tearDown() {
-        calculator = null;
+    @Override
+    protected double operation (double a, double b) {
+        return calculator.sum(a, b);
     }
+
 }
