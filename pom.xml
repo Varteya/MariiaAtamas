@@ -49,16 +49,6 @@
             </properties>
         </profile>
 
-        <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <suite.xml>src/test/resources/hw1/grt.xml</suite.xml>
-            </properties>
-        </profile>
-
     </profiles>
 
     <dependencies>
