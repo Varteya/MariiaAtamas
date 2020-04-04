@@ -15,6 +15,8 @@
 
         <testng.version>7.1.0</testng.version>
         <maven.surefare.plugin.version>3.0.0-M4</maven.surefare.plugin.version>
+        <selenium.version>3.141.59</selenium.version>
+        <webdrivermanager.version>3.8.1</webdrivermanager.version>
 
         <calculator.version>1.0</calculator.version>
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
@@ -65,6 +67,18 @@
             <version>${calculator.version}</version>
             <systemPath>${calculator.system.path}</systemPath>
             <scope>system</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
         </dependency>
     </dependencies>
 
