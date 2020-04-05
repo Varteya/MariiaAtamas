@@ -10,26 +10,22 @@ import java.util.List;
 public class Exercise1 extends BaseTest{
 
     @Test
-    public void testWebDriver () {
+    public void testWebDriverSoftAsserts () {
 
         SoftAssert softAssert = new SoftAssert();
 
         //Open test site by URL
-        driver.get("https://jdi-testing.github.io/jdi-light/index.html");
-        softAssert.assertEquals(driver.getCurrentUrl(), "https://jdi-testing.github.io/jdi-light/index.html");
+        String openedURL = openSite();
+        softAssert.assertEquals(openedURL, URL);
 
         //Assert Browser title
-        softAssert.assertEquals(driver.getTitle(), "Home Page");
+        softAssert.assertTrue(homePageIsOpened());
 
         //Perform login
-        driver.findElement(By.id("user-icon")).click();
-        driver.findElement(By.id("name")).sendKeys("Roman");
-        driver.findElement(By.id("password")).sendKeys("Jdi1234");
-        driver.findElement(By.id("login-button")).click();
-        softAssert.assertTrue(driver.findElement(By.cssSelector(".logout")).isDisplayed());
+        softAssert.assertTrue(login());
 
         //Assert Username is loggined
-        softAssert.assertEquals(driver.findElement(By.id("user-name")).getText(), "ROMAN IOVLEV");
+        softAssert.assertTrue(checkUsername());
 
         //Assert that there are 4 items on the header section are displayed and they have proper texts
         List<WebElement> navigationBarButtons = driver.findElements(By.cssSelector("ul.uui-navigation > li"));
