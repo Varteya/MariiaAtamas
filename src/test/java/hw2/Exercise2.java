@@ -33,26 +33,30 @@ public class Exercise2 extends BaseTest {
         assertEquals(driver.getCurrentUrl(), "https://jdi-testing.github.io/jdi-light/different-elements.html");
 
         //Select checkboxes
+        List<String> expectedSelectedElements = new ArrayList<>();
+        expectedSelectedElements.add("Water");
+        expectedSelectedElements.add("Wind");
         List<WebElement> checkboxes = driver.findElements(By.cssSelector("label.label-checkbox"));
         for (WebElement element : checkboxes) {
-            if (element.getText().equals("Wind") || element.getText().equals("Water")) {
+            if (expectedSelectedElements.contains(element.getText())) {
                 element.click();
             }
         }
 
-
         //Select radio
+        String expectedMetal = "Selen";
         List<WebElement> radios = driver.findElements(By.cssSelector("div.checkbox-row > label.label-radio"));
         for (WebElement element : radios) {
-            if (element.getText().equals("Selen")) {
+            if (element.getText().equals(expectedMetal)) {
                 element.click();
             }
         }
 
 
         //Select in dropdown
+        String expectedColor = "Yellow";
         Select color = new Select(driver.findElement(By.cssSelector("select.uui-form-element")));
-        color.selectByVisibleText("Yellow");
+        color.selectByVisibleText(expectedColor);
 
 
         //Assert that
@@ -66,9 +70,6 @@ public class Exercise2 extends BaseTest {
         possibleElements.add("Wind");
         possibleElements.add("Fire");
 
-        List<String> expectedSelectedElements = new ArrayList<>();
-        expectedSelectedElements.add("Water");
-        expectedSelectedElements.add("Wind");
         Map<String, Boolean> actualElements = new HashMap<>();
 
         List<String> possibleMetals = new ArrayList<>();
@@ -78,7 +79,6 @@ public class Exercise2 extends BaseTest {
         possibleMetals.add("Selen");
 
         boolean metalIsDefined = false;
-        String expectedMetal = "Selen";
         String actualMetal = "";
 
         List<String> possibleColors = new ArrayList<>();
@@ -88,7 +88,6 @@ public class Exercise2 extends BaseTest {
         possibleColors.add("Red");
 
         boolean colorIsDefined = false;
-        String expectedColor = "Yellow";
         String actualColor = "Red";
 
         List<WebElement> logs = driver.findElements(By.cssSelector("ul.panel-body-list > li"));
