@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import static org.testng.Assert.*;
 
@@ -40,14 +39,7 @@ public class Exercise2 extends BaseTest {
                 element.click();
             }
         }
-        for (WebElement element : checkboxes) {
-            WebElement checkboxField = element.findElement(By.cssSelector("input[type='checkbox']"));
-            if (element.getText().equals("Wind") || element.getText().equals("Water")) {
-                assertTrue(checkboxField.isSelected());
-            } else {
-                assertFalse(checkboxField.isSelected());
-            }
-        }
+
 
         //Select radio
         List<WebElement> radios = driver.findElements(By.cssSelector("div.checkbox-row > label.label-radio"));
@@ -56,32 +48,98 @@ public class Exercise2 extends BaseTest {
                 element.click();
             }
         }
-        for (WebElement element : radios) {
-            if (element.getText().equals("Selen")) {
-                assertTrue(element.findElement(By.cssSelector("input[type='radio']")).isSelected());
-            }
-        }
+
 
         //Select in dropdown
         Select color = new Select(driver.findElement(By.cssSelector("select.uui-form-element")));
         color.selectByVisibleText("Yellow");
-        assertEquals(color.getFirstSelectedOption().getText(), "Yellow");
+
 
         //Assert that
         //for each checkbox there is an individual log row and value is corresponded to the status of checkbox
         //for radio button there is a log row and value is corresponded to the status of radio button
         //for dropdown there is a log row and value is corresponded to the selected value.
 
-        List<String> correctLogs = new ArrayList<>();
-        correctLogs.add("metal: value changed to Selen");
-        correctLogs.add("Wind: condition changed to true");
-        correctLogs.add("Water: condition changed to true");
-        correctLogs.add("Colors: value changed to Yellow");
+        List<String> possibleElements = new ArrayList<>();
+        possibleElements.add("Water");
+        possibleElements.add("Earth");
+        possibleElements.add("Wind");
+        possibleElements.add("Fire");
+
+        List<String> expectedSelectedElements = new ArrayList<>();
+        expectedSelectedElements.add("Water");
+        expectedSelectedElements.add("Wind");
+        Map<String, Boolean> actualElements = new HashMap<>();
+
+        List<String> possibleMetals = new ArrayList<>();
+        possibleMetals.add("Gold");
+        possibleMetals.add("Silver");
+        possibleMetals.add("Bronze");
+        possibleMetals.add("Selen");
+
+        boolean metalIsDefined = false;
+        String expectedMetal = "Selen";
+        String actualMetal = "";
+
+        List<String> possibleColors = new ArrayList<>();
+        possibleColors.add("Blue");
+        possibleColors.add("Yellow");
+        possibleColors.add("Green");
+        possibleColors.add("Red");
+
+        boolean colorIsDefined = false;
+        String expectedColor = "Yellow";
+        String actualColor = "Red";
+
         List<WebElement> logs = driver.findElements(By.cssSelector("ul.panel-body-list > li"));
-        for (WebElement element : logs) {
-            String logStringWithoutTime = element.getText().substring(9);
-            assertTrue(correctLogs.contains(logStringWithoutTime));
+        for (WebElement webElement : logs) {
+            String[] data = webElement.getText().split(" ");
+            if (data[1].equals("Colors:")){
+                if (!colorIsDefined){
+                    actualColor = data[data.length - 1];
+                    colorIsDefined = true;
+                }
+            } else if (data[1].equals("metal:")){
+                if (!metalIsDefined){
+                    actualMetal = data[data.length - 1];
+                    metalIsDefined = true;
+                }
+            } else {
+                String elementLog = data[1].substring(0, data[1].length() - 1);
+                if (!actualElements.containsKey(elementLog)){
+                    boolean state = data[data.length - 1].equals("true");
+                    actualElements.put(elementLog, state);
+                }
+            }
         }
+        for (String s : possibleElements){
+            if (!actualElements.containsKey(s)){
+                actualElements.put(s, false);
+            }
+        }
+
+        assertEquals(actualColor, expectedColor);
+        assertEquals(actualMetal, expectedMetal);
+        for (String s : actualElements.keySet()){
+            assertEquals(actualElements.get(s).booleanValue(), expectedSelectedElements.contains(s));
+        }
+
+        //check checkBoxes
+        for (WebElement element : checkboxes) {
+            WebElement checkboxField = element.findElement(By.cssSelector("input[type='checkbox']"));
+            String checkBoxText = element.getText();
+            assertEquals(checkboxField.isSelected(), actualElements.get(checkBoxText).booleanValue());
+        }
+
+        //check radiobutton
+        for (WebElement element : radios) {
+            if (element.getText().equals(actualMetal)) {
+                assertTrue(element.findElement(By.cssSelector("input[type='radio']")).isSelected());
+            }
+        }
+
+        //check dropdown menu
+        assertEquals(color.getFirstSelectedOption().getText(), actualColor);
 
     }
 
