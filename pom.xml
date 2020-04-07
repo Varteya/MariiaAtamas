@@ -15,6 +15,9 @@
 
         <testng.version>7.1.0</testng.version>
         <maven.surefare.plugin.version>3.0.0-M4</maven.surefare.plugin.version>
+        <selenium.version>3.141.59</selenium.version>
+        <webdrivermanager.version>3.8.1</webdrivermanager.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <calculator.version>1.0</calculator.version>
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
@@ -49,6 +52,25 @@
             </properties>
         </profile>
 
+        <profile>
+            <id>SoftAsserts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw2/Exercise1Suite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>HardAsserts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw2/Exercise2Suite.xml</suite.xml>
+            </properties>
+        </profile>
+
     </profiles>
 
     <dependencies>
@@ -65,6 +87,18 @@
             <version>${calculator.version}</version>
             <systemPath>${calculator.system.path}</systemPath>
             <scope>system</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
         </dependency>
     </dependencies>
 
