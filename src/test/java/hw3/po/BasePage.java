@@ -23,10 +23,6 @@ public class BasePage {
     protected List<String> leftMenuTexts;
 
 
-    List<WebElement> getNavigationBarButtons (){
-        return navigationBarButtons;
-    }
-
     public boolean navigationBarButtonsAreDisplayed() {
         return allElementsAreDisplayed(navigationBarButtons);
     }
@@ -64,5 +60,9 @@ public class BasePage {
             }
         }
         return true;
+    }
+
+    public boolean checkURL (String expectedURL){
+        return URL.equals(expectedURL);
     }
 }

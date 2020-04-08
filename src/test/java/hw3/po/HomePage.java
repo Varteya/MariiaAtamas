@@ -39,6 +39,13 @@ public class HomePage extends BasePage {
     @FindBy(id = "frame-button")
     private WebElement frameButton;
 
+    @FindBy(linkText = "Service")
+    private WebElement serviceButton;
+
+    @FindBy(linkText = "Different elements")
+    private WebElement differentElementsButton;
+
+
     public HomePage (WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -50,9 +57,7 @@ public class HomePage extends BasePage {
         header = driver.getTitle();
     }
 
-    public boolean checkURL (String expectedURL){
-        return URL.equals(expectedURL);
-    }
+
 
     public void login (String name, String password) {
         userIcon.click();
@@ -103,6 +108,11 @@ public class HomePage extends BasePage {
 
     public void switchToHomePage (){
         driver.switchTo().defaultContent();
+    }
+
+    public void goToDifferentElements(){
+        serviceButton.click();
+        differentElementsButton.click();
     }
 
 }
