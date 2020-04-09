@@ -7,12 +7,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 public class BaseTest {
 
-    protected final String URL = "https://jdi-testing.github.io/jdi-light/index.html";
-    protected final String login = "Roman";
-    protected final String password = "Jdi1234";
-    protected final String username = "ROMAN IOVLEV";
+    private static Properties properties;
+
+    {
+        properties = new Properties();
+        try(InputStream inputStream = BaseTest.class.getClassLoader().getResourceAsStream("hw3/testData.properties")) {
+            properties.load(inputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected final String URL = properties.getProperty("url");
+    protected final String login = properties.getProperty("login");
+    protected final String password = properties.getProperty("password");
+    protected final String username = properties.getProperty("username");
 
     protected Browser browser;
     protected HomePage homePage;

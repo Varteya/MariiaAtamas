@@ -45,10 +45,8 @@ public class HomePage extends BasePage {
     @FindBy(linkText = "Different elements")
     private WebElement differentElementsButton;
 
-
-    public HomePage (WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public HomePage(WebDriver driver) {
+        super(driver);
     }
 
     public void openSite (String URL){
@@ -56,8 +54,6 @@ public class HomePage extends BasePage {
         this.URL = driver.getCurrentUrl();
         header = driver.getTitle();
     }
-
-
 
     public void login (String name, String password) {
         userIcon.click();

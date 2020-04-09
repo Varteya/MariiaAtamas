@@ -8,12 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+
 
 public class DifferentElements extends BasePage {
 
@@ -31,10 +29,8 @@ public class DifferentElements extends BasePage {
     private List<WebElement> logs;
     private List<String[]> logsData;
 
-    public DifferentElements (WebDriver driver){
-        this.driver = driver;
-        this.URL = driver.getCurrentUrl();
-        PageFactory.initElements(driver, this);
+    public DifferentElements(WebDriver driver) {
+        super(driver);
     }
 
     public void setCheckboxes (List<String> list){
@@ -66,21 +62,11 @@ public class DifferentElements extends BasePage {
     }
 
     public String findColor (){
-        for (String[] data : logsData){
-            if (data[1].equals("Colors:")){
-                return data[data.length - 1];
-            }
-        }
-        return null;
+        return findSmth("Colors:");
     }
 
     public String findMetal (){
-        for (String[] data : logsData){
-            if (data[1].equals("metal:")){
-                return data[data.length - 1];
-            }
-        }
-        return null;
+        return findSmth("metal:");
     }
 
     public void findElements (Map<String, Boolean> actualElements){
@@ -93,6 +79,15 @@ public class DifferentElements extends BasePage {
                 }
             }
         }
+    }
+
+    public String findSmth (String toFind) {
+        for (String[] data : logsData){
+            if (data[1].equals(toFind)){
+                return data[data.length - 1];
+            }
+        }
+        throw new IllegalArgumentException();
     }
 
     public boolean checkCheckboxes (Map<String, Boolean> actualElements){
