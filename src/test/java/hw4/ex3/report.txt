@@ -1,0 +1,13 @@
+LAYERS OF TAF ARCHITECTURE WAS USED:
+- Test logic (classes Exercise1.java and Exercise2.java)
+- Realization of test logic (BaseTest.java for exercise1, BaseTest.java and pageObjects for exercise2)
+- Work with testing data (DataProvider for exercise2)
+- Running tests (profiles in pom.xml)
+- Configuration (.properties for both exercises)
+
+MISSED LAYERS:
+- REPORTS AND LOGGING
+- SERVICES
+
+WAYS TO IMPROVEMENT MY SOLUTION
+Usage of logging systems can make it better
