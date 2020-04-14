@@ -25,7 +25,7 @@
 
     <profiles>
         <profile>
-            <id>addSum</id>
+            <id>hw1_addSum</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -34,7 +34,7 @@
             </properties>
         </profile>
         <profile>
-            <id>mulDiv</id>
+            <id>hw1_mulDiv</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -43,7 +43,7 @@
             </properties>
         </profile>
         <profile>
-            <id>allTests</id>
+            <id>hw1_allTests</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -53,7 +53,7 @@
         </profile>
 
         <profile>
-            <id>SoftAsserts</id>
+            <id>hw2_SoftAsserts</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -62,7 +62,7 @@
             </properties>
         </profile>
         <profile>
-            <id>HardAsserts</id>
+            <id>hw2_HardAsserts</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -72,7 +72,7 @@
         </profile>
 
         <profile>
-            <id>hw4.ex1</id>
+            <id>hw4_ex1</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -81,7 +81,7 @@
             </properties>
         </profile>
         <profile>
-            <id>hw4.ex2</id>
+            <id>hw4_ex2</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -89,7 +89,6 @@
                 <suite.xml>src/test/resources/hw4/ex2/testSuite.xml</suite.xml>
             </properties>
         </profile>
-
     </profiles>
 
     <dependencies>
@@ -120,10 +119,6 @@
             <version>${webdrivermanager.version}</version>
         </dependency>
     </dependencies>
-
-
-
-
 
     <build>
         <pluginManagement>
