@@ -18,6 +18,9 @@
         <selenium.version>3.141.59</selenium.version>
         <webdrivermanager.version>3.8.1</webdrivermanager.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>2.13.2</allure.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <allue-maven.version>2.10.0</allue-maven.version>
 
         <calculator.version>1.0</calculator.version>
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
@@ -25,7 +28,7 @@
 
     <profiles>
         <profile>
-            <id>addSum</id>
+            <id>hw1_addSum</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -34,7 +37,7 @@
             </properties>
         </profile>
         <profile>
-            <id>mulDiv</id>
+            <id>hw1_mulDiv</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -43,7 +46,7 @@
             </properties>
         </profile>
         <profile>
-            <id>allTests</id>
+            <id>hw1_allTests</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -53,7 +56,7 @@
         </profile>
 
         <profile>
-            <id>SoftAsserts</id>
+            <id>hw2_SoftAsserts</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -62,12 +65,40 @@
             </properties>
         </profile>
         <profile>
-            <id>HardAsserts</id>
+            <id>hw2_HardAsserts</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <suite.xml>src/test/resources/hw2/Exercise2Suite.xml</suite.xml>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>hw5_Exercise1</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw5/Exercise1Suite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>hw5_Exercise2</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw5/Exercise2Suite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>hw5_BrokenTest</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw5/BrokenTestSuite.xml</suite.xml>
             </properties>
         </profile>
 
@@ -100,11 +131,14 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
-
-
-
 
     <build>
         <pluginManagement>
@@ -117,10 +151,31 @@
                         <suiteXmlFiles>
                             <xmlFile>${suite.xml}</xmlFile>
                         </suiteXmlFiles>
+                        <argLine>
+                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        </argLine>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.aspectj</groupId>
+                            <artifactId>aspectjweaver</artifactId>
+                            <version>${aspectj.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-maven</artifactId>
+                    <version>${allure-maven-plugin.version}</version>
+                    <configuration>
+                        <reportVersion>${allure.version}</reportVersion>
+                        <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
+
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -130,7 +185,19 @@
                     <target>${java.target.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allue-maven.version}</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+                </configuration>
+            </plugin>
         </plugins>
+
+
     </build>
 
 </project>
