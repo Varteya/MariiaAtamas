@@ -3,8 +3,11 @@ package hw5;
 import hw5.steps.Exercise1steps;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners({AllureScreenshotListener.class})
 public class BrokenTest extends BaseTest {
 
     Exercise1steps steps;
