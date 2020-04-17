@@ -74,6 +74,26 @@
             </properties>
         </profile>
 
+
+        <profile>
+            <id>hw3_SoftAsserts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw3/Exercise1Suite.xml</suite.xml>
+            </properties>
+        </profile>
+        <profile>
+            <id>hw3_HardAsserts</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw3/Exercise2Suite.xml</suite.xml>
+            </properties>
+        </profile>
+
         <profile>
             <id>hw5_Exercise1</id>
             <activation>
