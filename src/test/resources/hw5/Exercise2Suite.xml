@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name = "Exercise2 suite">
+
+    <listeners>
+        <listener class-name="hw5.AllureScreenshotListener"></listener>
+    </listeners>
+
+    <test name="Exercise2Suite">
+        <classes>
+            <class name="hw5.Exercise2"></class>
+        </classes>
+    </test>
+</suite>
