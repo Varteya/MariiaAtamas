@@ -1,5 +1,7 @@
 package hw4.ex1;
 
+import hw4.BaseTest;
+import hw4.ex2.Browser;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,13 +16,13 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 
-public class BaseTest {
+public class TestImplementation extends BaseTest {
 
     private static Properties properties;
 
     {
         properties = new Properties();
-        try(InputStream inputStream = BaseTest.class.getClassLoader().getResourceAsStream("hw4/ex1/data.properties")) {
+        try(InputStream inputStream = TestImplementation.class.getClassLoader().getResourceAsStream("hw4/ex1/data.properties")) {
             properties.load(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
@@ -41,36 +43,16 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
-    protected void openSite(){
-        driver.get(firstURL);
-    }
-
-    protected boolean checkURL(String expected) {
-        return driver.getCurrentUrl().equals(expected);
+        super.setUp();
+        driver = browser.getDriver();
     }
 
     protected boolean checkTitle (String expected){
-        return driver.getTitle().equals(expected);
-    }
-
-    protected void login(){
-        driver.findElement(By.id("user-icon")).click();
-        driver.findElement(By.id("name")).sendKeys(login);
-        driver.findElement(By.id("password")).sendKeys(password);
-        driver.findElement(By.id("login-button")).click();
-    }
-
-    protected boolean isLoggined(){
-        return driver.findElement(By.cssSelector(".logout")).isDisplayed();
+        return homePage.checkTitle(expected);
     }
 
     protected boolean checkUsername() {
-        return driver.findElement(By.id("user-name")).getText().equals(username);
+        return homePage.getUsername().equals(username);
     }
 
     protected void openTableWithPages () {
@@ -133,9 +115,5 @@ public class BaseTest {
         table = driver.findElements(By.cssSelector("#table-with-pages > tbody > tr"));
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 
 }

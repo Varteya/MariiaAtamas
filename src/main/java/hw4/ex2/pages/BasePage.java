@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.sql.Struct;
+
 public class BasePage {
     WebDriver driver;
     protected String URL;
@@ -48,5 +50,13 @@ public class BasePage {
 
     public void goToMetalsAndColors(){
         metalsAndColorsButton.click();
+    }
+
+    public boolean checkTitle (String expected){
+        return driver.getTitle().equals(expected);
+    }
+
+    public String getUsername(){
+        return driver.findElement(By.id("user-name")).getText();
     }
 }

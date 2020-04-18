@@ -32,6 +32,10 @@ public class Browser {
         return driver.getCurrentUrl();
     }
 
+    public WebDriver getDriver(){
+        return driver;
+    }
+
     public void tearDown (){
         driver.quit();
     }

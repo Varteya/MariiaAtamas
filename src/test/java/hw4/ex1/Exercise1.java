@@ -3,19 +3,19 @@ package hw4.ex1;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
-public class Exercise1 extends BaseTest {
+public class Exercise1 extends TestImplementation {
 
     @Test
     public void TableWithPagesTesting (){
         //Open test site by URL
-        openSite();
+        openSite(firstURL);
         assertTrue(checkURL(firstURL));
 
         //Assert Browser title
         assertTrue(checkTitle(firstTitle));
 
         //Perform login
-        login();
+        login(login, password);
         assertTrue(isLoggined());
 
         //Assert User name in the left-top side of screen that user is loggined

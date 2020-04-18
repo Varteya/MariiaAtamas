@@ -1,7 +1,6 @@
 package hw4.ex2;
 
 import hw4.ex2.pages.MetalsAndColorsPage;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
@@ -9,16 +8,16 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class Exercise2 extends BaseTest{
+public class Exercise2 extends TestImplementation {
 
     @Test(dataProviderClass = TestDataProvider.class, dataProvider = "testData")
     public void metalAndColorsTest(TestData data) {
         //Open test site by URL
-        openSite();
+        openSite(firstURL);
         assertTrue(checkURL(firstURL));
 
         //Perform login
-        login();
+        login(login, password);
         assertTrue(isLoggined());
 
         //Click on the link on the Header section
