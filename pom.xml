@@ -21,6 +21,8 @@
         <allure.version>2.13.2</allure.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allue-maven.version>2.10.0</allue-maven.version>
+        <cucumber-java.vercion>5.6.0</cucumber-java.vercion>
+        <cucumber-testng.version>5.6.0</cucumber-testng.version>
 
         <calculator.version>1.0</calculator.version>
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
@@ -174,6 +176,20 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-java.vercion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber-testng.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
