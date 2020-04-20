@@ -30,6 +30,9 @@ public class HomePage extends BasePage {
     @FindBy(linkText = "Different elements")
     private WebElement differentElementsButton;
 
+    @FindBy(linkText = "User Table")
+    private WebElement userTable;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -65,6 +68,10 @@ public class HomePage extends BasePage {
 
     public void goToDifferentElements(){
         differentElementsButton.click();
+    }
+
+    public void goToUserTable(){
+        userTable.click();
     }
 
 }

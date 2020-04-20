@@ -1,5 +1,6 @@
-package hw6.exercise1.steps;
+package hw6;
 
+import hw6.BaseStep;
 import io.cucumber.java.After;
 
 public class CucumberHooks extends BaseStep {

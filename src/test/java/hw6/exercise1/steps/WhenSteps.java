@@ -5,7 +5,7 @@ import io.cucumber.java.en.When;
 import java.util.Arrays;
 import java.util.List;
 
-public class WhenSteps extends BaseStep {
+public class WhenSteps extends BaseWithDataStorage {
 
 
     @When("I perform login as {string} with password {string} on the JDI-testing home page")
@@ -25,7 +25,7 @@ public class WhenSteps extends BaseStep {
 
     @When("I choose checkboxes {string} and {string} on the Different Elements Page")
     public void iChooseCheckboxesOnTheDifferentElementsPage(String element1, String element2) {
-        List<String> elements = Arrays.asList(new String[]{element1, element2});
+        List<String> elements = Arrays.asList(element1, element2);
         browser.getDifferentElements().setCheckboxes(elements);
         expectedElements = elements;
     }

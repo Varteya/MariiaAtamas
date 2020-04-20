@@ -10,7 +10,7 @@ import java.util.Map;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class ThenSteps extends BaseStep {
+public class ThenSteps extends BaseWithDataStorage {
 
     private Map<String, Boolean> actualElements = new HashMap<>();
     private String actualMetal = "";
