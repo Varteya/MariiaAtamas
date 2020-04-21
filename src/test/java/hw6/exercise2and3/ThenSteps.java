@@ -1,8 +1,7 @@
-package hw6.exercise2;
+package hw6.exercise2and3;
 
 import hw6.BaseStep;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
 import java.util.List;
@@ -54,5 +53,10 @@ public class ThenSteps extends BaseStep {
         List<String> dataTableList = dataTable.asList();
         List<String> droplistValues = dataTableList.subList(1, dataTableList.size());
         assertTrue(browser.getUserTable().checkDropdownForUser(droplistValues, "Roman"));
+    }
+
+    @Then("{int} log row has {string} text in log section")
+    public void logRowHasTextInLogSection(int number, String expected) {
+        assertTrue(browser.getUserTable().checkLogsRow(number, expected));
     }
 }

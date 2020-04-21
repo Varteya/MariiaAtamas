@@ -142,6 +142,18 @@
                 <suite.xml>src/test/resources/hw4/ex2/testSuite.xml</suite.xml>
             </properties>
         </profile>
+
+        <profile>
+            <id>hw6</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw6/Exercise1Suite.xml</suite.xml>
+            </properties>
+        </profile>
+
+
     </profiles>
 
     <dependencies>

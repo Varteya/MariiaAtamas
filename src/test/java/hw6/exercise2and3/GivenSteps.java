@@ -1,8 +1,7 @@
-package hw6.exercise2;
+package hw6.exercise2and3;
 
 import hw6.BaseStep;
 import hw6.Browser;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;

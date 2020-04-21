@@ -1,4 +1,4 @@
-package hw6.exercise2;
+package hw6.exercise2and3;
 
 import hw6.BaseStep;
 import io.cucumber.java.en.And;
@@ -11,8 +11,15 @@ public class WhenSteps extends BaseStep {
         browser.getHomePage().clickServiceButton();
     }
 
-    @And("I click on {string} button in Service dropdown")
+    @When("I click on {string} button in Service dropdown")
     public void iClickOnButtonInServiceDropdown(String arg0) {
         browser.getHomePage().goToUserTable();
     }
+
+    @When("I select vip checkbox for {string}")
+    public void iSelectVipCheckboxFor(String username) {
+        browser.getUserTable().selectCheckbox(username);
+    }
+
+
 }

@@ -11,6 +11,9 @@ import java.util.List;
 
 public class UserTable extends BasePage {
 
+    @FindBy(css = "ul.panel-body-list > li")
+    private List<WebElement> logs;
+
     @FindBy(id = "user-table")
     private WebElement usertable;
     private List<WebElement> dropdowns;
@@ -101,22 +104,14 @@ public class UserTable extends BasePage {
                 descriptionText.equals(expectedDescription));
     }
 
-
     public boolean checkDropdownForUser (List<String> expectedDropdownValues, String username){
         if (rows == null){
             initializeRows();
         }
-        int index = -1;
-        for (int i = 0; i < usernamesStringList.size(); i++){
-            if (usernamesStringList.get(i).equals(username)){
-                index = i;
-                break;
-            }
-        }
+        int index = findRowNumber(username);
         if (index == -1){
             throw new IllegalArgumentException();
         }
-        WebElement actualRow = rows.get(index);
         Select dropdown = new Select(dropdowns.get(index));
         List<WebElement> options = dropdown.getOptions();
         List<String> optionsTexts = webElementsToStrings(options);
@@ -132,6 +127,39 @@ public class UserTable extends BasePage {
             result.add(element.getText());
         }
         return result;
+    }
+
+    private int findRowNumber (String username){
+        for (int i = 0; i < usernamesStringList.size(); i++){
+            if (usernamesStringList.get(i).equals(username)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void selectCheckbox (String username){
+        if (usernames == null){
+            initializeUsernames();
+        }
+        if (descriptionTexts == null){
+            initializeDescriptionTexts();
+        }
+        int index = findRowNumber(username);
+        if (index == -1){
+            throw new IllegalArgumentException();
+        }
+        WebElement description = descriptionTexts.get(index);
+        WebElement checkBox = description.findElement(By.cssSelector("input"));
+        checkBox.click();
+    }
+
+    public boolean checkLogsRow (int number, String expected){
+        number--;
+        WebElement row = logs.get(number);
+        String rowText = row.getText();
+        String result = rowText.substring(9, rowText.length());
+        return result.equals(expected);
     }
 
 }
