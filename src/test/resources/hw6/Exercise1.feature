@@ -9,7 +9,9 @@ Feature: Different Elements Page testing
     When I click to Service button on the header on the JDI-testing home page
     And I click to Different Elements button in dropdown on the JDI-testing home page
     Then URL should be 'https://jdi-testing.github.io/jdi-light/different-elements.html' on the Different Elements Page
-    When I choose checkboxes 'Water' and 'Wind' on the Different Elements Page
+    When I choose checkboxes on the Different Elements Page:
+    |Water|
+    |Wind|
     And I choose radio 'Selen' on the Different Elements Page
     And I choose dropdown 'Yellow' on the Different Elements Page
     Then Logs should be correct for chosen values on the Different Elements Page

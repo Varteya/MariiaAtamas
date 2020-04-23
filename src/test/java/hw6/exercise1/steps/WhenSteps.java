@@ -1,5 +1,6 @@
 package hw6.exercise1.steps;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.When;
 
 import java.util.Arrays;
@@ -23,9 +24,9 @@ public class WhenSteps extends BaseWithDataStorage {
         browser.getHomePage().goToDifferentElements();
     }
 
-    @When("I choose checkboxes {string} and {string} on the Different Elements Page")
-    public void iChooseCheckboxesOnTheDifferentElementsPage(String element1, String element2) {
-        List<String> elements = Arrays.asList(element1, element2);
+    @When("I choose checkboxes on the Different Elements Page:")
+    public void iChooseCheckboxesOnTheDifferentElementsPage(DataTable dataTable) {
+        List<String> elements = dataTable.asList();
         browser.getDifferentElements().setCheckboxes(elements);
         expectedElements = elements;
     }
