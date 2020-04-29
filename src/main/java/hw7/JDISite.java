@@ -6,10 +6,8 @@ import hw7.entities.User;
 import hw7.pages.JDIHomePage;
 import hw7.pages.JDIMetalsAndColors;
 
-//@JSite("https://jdi-testing.github.io/jdi-light/")
 public class JDISite {
 
-//    @Url("/index.html")
     public static JDIHomePage jdiHomePage;
     public static JDIMetalsAndColors jdiMetalsAndColors;
 

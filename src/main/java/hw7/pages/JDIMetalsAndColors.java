@@ -10,9 +10,10 @@ import com.epam.jdi.light.elements.pageobjects.annotations.Url;
 import com.epam.jdi.light.elements.pageobjects.annotations.locators.JDropdown;
 import com.epam.jdi.light.ui.html.elements.common.Button;
 import hw7.entities.MetalsAndColorsData;
-import hw7.forms.MetalsAndColorsForm;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import static junit.framework.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
@@ -59,6 +60,7 @@ public class JDIMetalsAndColors extends WebPage {
     @FindBy(css = "ul.results > li")
     private WebList results;
 
+
     public void setValues(MetalsAndColorsData data){
         this.setSummary(data.getSummary());
         this.setElements(data.getElements());
@@ -93,7 +95,6 @@ public class JDIMetalsAndColors extends WebPage {
                 chooseValueInRow(value, evenRow);
             }
         }
-        calculateButton.click();
     }
 
     private void chooseValueInRow (String value, WebElement row){
@@ -113,7 +114,7 @@ public class JDIMetalsAndColors extends WebPage {
 
 
 
-    public boolean checkResults (MetalsAndColorsData expected){
+    public void checkResults(MetalsAndColorsData expected){
         String summaryResult = "";
         List<String> elementsResult = null;
         String colorResult = "";
@@ -134,16 +135,18 @@ public class JDIMetalsAndColors extends WebPage {
             } else {
                 vegetablesResult = Arrays.asList(Arrays.copyOfRange(splitted, 1, splitted.length));
             }
-
         }
 
+
         String expectedSummary = Integer.valueOf(expected.getSummary().get(0)) + Integer.valueOf(expected.getSummary().get(1)) + "";
-        return (summaryResult.equals(expectedSummary) &&
-                elementsResult.containsAll(expected.getElements()) && expected.getElements().containsAll(elementsResult) &&
-                colorResult.equals(expected.getColor()) &&
-                metalResult.equals(expected.getMetals()) &&
-                vegetablesResult.containsAll(expected.getVegetables()) && expected.getVegetables().containsAll(vegetablesResult));
+        assertTrue(summaryResult.equals(expectedSummary));
+        assertTrue(elementsResult.containsAll(expected.getElements()) && expected.getElements().containsAll(elementsResult));
+        assertTrue(colorResult.equals(expected.getColor()));
+        assertTrue(metalResult.equals(expected.getMetals()));
+        assertTrue(vegetablesResult.containsAll(expected.getVegetables()) && expected.getVegetables().containsAll(vegetablesResult));
+
     }
+
 
 
 //    private MetalsAndColorsForm metalsAndColorsForm;
@@ -151,7 +154,7 @@ public class JDIMetalsAndColors extends WebPage {
 //    public void setValues(MetalsAndColorsData data){
 //        metalsAndColorsForm.setValues(data);
 //    }
-//
+
 
 
 }

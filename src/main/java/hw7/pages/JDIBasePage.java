@@ -25,7 +25,7 @@ public class JDIBasePage extends WebPage {
         loginForm.login(user);
     }
 
-    public boolean checkUsername(User user){
+    public boolean isUsernameCorrect(User user){
         return user.getUsername().equals(username.getValue());
     }
 

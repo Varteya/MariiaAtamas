@@ -21,7 +21,6 @@ public class JDIDataProvider {
         } catch (Exception e){
             e.printStackTrace();
         }
-        List<MetalsAndColorsData> testData = new ArrayList<>(dataMap.values());
-        return testData.toArray();
+        return dataMap.values().toArray();
     }
 }

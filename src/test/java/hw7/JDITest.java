@@ -37,7 +37,7 @@ public class JDITest {
         JDISite.open();
         User user = new User(login, password, username);
         JDISite.jdiHomePage.login(user);
-        assertTrue(JDISite.jdiHomePage.checkUsername(user));
+        assertTrue(JDISite.jdiHomePage.isUsernameCorrect(user));
     }
 
     @AfterSuite(alwaysRun = true)
@@ -49,9 +49,7 @@ public class JDITest {
     public void openSiteAndLogin(MetalsAndColorsData testData){
         JDISite.jdiHomePage.goToMetalsAndColors();
         JDISite.jdiMetalsAndColors.setValues(testData);
-        assertTrue(JDISite.jdiMetalsAndColors.checkResults(testData));
+        JDISite.jdiMetalsAndColors.checkResults(testData);
     }
-
-
 
 }
