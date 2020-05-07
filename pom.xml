@@ -23,6 +23,13 @@
         <allue-maven.version>2.10.0</allue-maven.version>
         <cucumber-java.vercion>5.6.0</cucumber-java.vercion>
         <cucumber-testng.version>5.6.0</cucumber-testng.version>
+        <jdi.version>1.2.3</jdi.version>
+        <lombok.version>1.18.12</lombok.version>
+        <guava.version>22.0</guava.version>
+        <jackson-annotaion.version>2.9.9</jackson-annotaion.version>
+
+        <domain>https://jdi-testing.github.io/jdi-light/</domain>
+        <driver>chrome</driver>
 
         <calculator.version>1.0</calculator.version>
         <calculator.system.path>${project.basedir}/src/test/resources/calculator-1.0.jar</calculator.system.path>
@@ -154,6 +161,16 @@
         </profile>
 
 
+
+        <profile>
+            <id>hw7</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw7/testSuite.xml</suite.xml>
+            </properties>
+        </profile>
     </profiles>
 
     <dependencies>
@@ -178,11 +195,11 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.github.bonigarcia</groupId>-->
+<!--            <artifactId>webdrivermanager</artifactId>-->
+<!--            <version>${webdrivermanager.version}</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -203,6 +220,30 @@
             <artifactId>cucumber-testng</artifactId>
             <version>${cucumber-testng.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.epam.jdi</groupId>
+            <artifactId>jdi-light-html</artifactId>
+            <version>${jdi.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.9</version>
         </dependency>
     </dependencies>
 
