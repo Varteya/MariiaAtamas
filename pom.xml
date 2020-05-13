@@ -160,8 +160,6 @@
             </properties>
         </profile>
 
-
-
         <profile>
             <id>hw7</id>
             <activation>
@@ -171,6 +169,27 @@
                 <suite.xml>src/test/resources/hw7/testSuite.xml</suite.xml>
             </properties>
         </profile>
+
+        <profile>
+            <id>hw9_Russian</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw9/RussianTestSuite.xml</suite.xml>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>hw9_English</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <suite.xml>src/test/resources/hw9/EnglishTestSuite.xml</suite.xml>
+            </properties>
+        </profile>
+
     </profiles>
 
     <dependencies>
@@ -244,6 +263,24 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
             <version>2.9.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.6</version>
         </dependency>
     </dependencies>
 
