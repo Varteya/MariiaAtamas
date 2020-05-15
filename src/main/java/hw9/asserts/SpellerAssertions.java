@@ -1,5 +1,7 @@
-package hw9;
+package hw9.asserts;
 
+
+import hw9.dto.SpellerDTO;
 
 import static org.testng.Assert.assertTrue;
 

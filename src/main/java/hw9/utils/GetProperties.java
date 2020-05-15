@@ -1,6 +1,4 @@
-package hw9;
-
-import lombok.Getter;
+package hw9.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,6 +1,8 @@
-package hw9;
+package hw9.service;
 
 import com.google.gson.Gson;
+import hw9.utils.GetProperties;
+import hw9.dto.SpellerDTO;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -10,18 +12,19 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 
-public class RestService {
+public class RestService extends BaseService {
 
-    private RequestSpecification REQUEST_SPECIFICATION;
+    private static RestService restService;
 
-    public RestService(){
-        String url = GetProperties.getUrl();
-        REQUEST_SPECIFICATION = new RequestSpecBuilder()
-                .setBaseUri(url)
-                .addFilter(new RequestLoggingFilter())
-                .addFilter(new ResponseLoggingFilter())
-                .build();
+    public static RestService getRestService(){
+        if (restService == null){
+            restService = new RestService();
+        }
+        return restService;
     }
+
+    private RestService(){}
+
 
     public SpellerDTO[] spellerGetTextWithLang(String uri, String lang, String[] data){
         RequestSpecification specification = given(REQUEST_SPECIFICATION);
@@ -30,21 +33,16 @@ public class RestService {
             specification.param("text", part);
         }
         Response result = specification.get(uri);
-        return new Gson().fromJson(result.getBody().asString(), SpellerDTO[].class);
+        return jsonToDto(result);
     }
 
     public SpellerDTO[] spellerGetTextWithOptions(String uri, int options, String[] data) {
         RequestSpecification specification = given(REQUEST_SPECIFICATION);
         specification.param("options", options);
-        for (String part : data) {
-            specification.param("text", part);
-        }
-        Response result = specification.get(uri);
+        Response result = getWithTextParams(uri, specification, data);
         return jsonToDto(result);
     }
 
-    private SpellerDTO[] jsonToDto (Response response){
-        return new Gson().fromJson(response.getBody().asString(),SpellerDTO[].class);
-    }
+
 
 }

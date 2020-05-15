@@ -1,4 +1,4 @@
-package hw9;
+package hw9.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
