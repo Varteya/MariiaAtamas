@@ -15,20 +15,20 @@ public class EnglishCheckTextTest extends BaseTest {
 
     @Test(description = "Testing one word with a mistake", dataProvider = "oneWordWithMistakeData")
     public void oneWordWithMistake(String[] data){
-        SpellerAssertions result = new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, data));
-        result.verifyTextResult(Arrays.asList(data));
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, data))
+                .verifyTextResult(Arrays.asList(data));
     }
 
     @Test(description = "Testing with ignoring URLs", dataProvider = "testWithIgnoringURLs")
     public void ignoringURLs(String[] data){
-        SpellerAssertions result = new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(CHECK_TEXT_URI, IGNORE_URLS, new String[]{data[0]}));
-        result.verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(CHECK_TEXT_URI, IGNORE_URLS, new String[]{data[0]}))
+                .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "Testing without ignoring URLs", dataProvider = "testWithoutIgnoringURLs")
     public void findingURLs(String[] data){
-        SpellerAssertions result = new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}));
-        result.verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}))
+                .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @DataProvider
