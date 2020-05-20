@@ -25,24 +25,21 @@ public class RestService extends BaseService {
 
     private RestService(){}
 
-
-    public SpellerDTO[] spellerGetTextWithLang(String uri, String lang, String[] data){
-        RequestSpecification specification = given(REQUEST_SPECIFICATION);
-        specification.param("lang", lang);
-        for (String part : data) {
-            specification.param("text", part);
-        }
-        Response result = specification.get(uri);
-        return jsonToDto(result);
+    public SpellerDTO[] spellerGetTextRuWithoutOptions(String[] data){
+        return spellerGetTextWithLang(RU, data);
     }
 
-    public SpellerDTO[] spellerGetTextWithOptions(String uri, int options, String[] data) {
-        RequestSpecification specification = given(REQUEST_SPECIFICATION);
-        specification.param("options", options);
-        Response result = getWithTextParams(uri, specification, data);
-        return jsonToDto(result);
+    public SpellerDTO[] spellerGetTextEnWithoutOptions(String[] data){
+        return spellerGetTextWithLang(EN, data);
     }
 
+    public SpellerDTO[][] spellerGetTextsEnWithoutOptions(String[] data){
+        return spellerGetTextsWithLang(EN, data);
+    }
+
+    public SpellerDTO[] spellerGetTextWithOptions(int options, String[] data){
+        return super.spellerGetTextWithOptions(options, data);
+    }
 
 
 }

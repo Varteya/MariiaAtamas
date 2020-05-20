@@ -9,54 +9,51 @@ import java.util.Arrays;
 
 public class RussianCheckTextTest extends BaseTest {
 
-    private static final String CHECK_TEXT_URI = "checkText";
-    private static final String LANG = "ru";
-
     @Test(description = "Testing one word with a mistake", dataProvider = "oneWordWithMistakeData")
     public void oneWordWithMistake(String data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextRuWithoutOptions(new String[]{data}))
                 .verifyTextResult(Arrays.asList(data));
     }
 
     @Test(description = "Testing one word with a mistake on full sentence", dataProvider = "oneWordWithMistakeInSentenceData")
     public void oneWordWithMistakeInSentence(String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextRuWithoutOptions(new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(data[1]));
     }
 
     @Test(description = "Testing some words with mistakes", dataProvider = "someWordsWithMistakes")
     public void someWordsWithMistakes(String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextRuWithoutOptions(new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "Testing with ignoring digits", dataProvider = "wordsWithDigitsIgnore")
     public void testingWithIgnoringDigits (String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(CHECK_TEXT_URI, IGNORE_DIGITS, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(IGNORE_DIGITS, new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "Testing without ignoring digits", dataProvider = "wordsWithoutDigitsIgnore")
     public void testingWithoutIgnoringDigits (String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextRuWithoutOptions(new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "Testing with finding repeats", dataProvider = "wordsWithRepeats")
     public void testingRepeatingWords (String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(CHECK_TEXT_URI, FIND_REPEAT_WORDS, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(FIND_REPEAT_WORDS, new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "Testing incorrect capitalization", dataProvider = "ignoreIncorrectCapitalization")
     public void testingIgnoringIncorrectCapitalization (String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(CHECK_TEXT_URI, IGNORE_CAPITALIZATION, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextWithOptions(IGNORE_CAPITALIZATION, new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
     @Test(description = "finding incorrect capitalization", dataProvider = "findIncorrectCapitalization")
     public void testingAndFindingIncorrectCapitalization (String[] data){
-        new SpellerAssertions(RestService.getRestService().spellerGetTextWithLang(CHECK_TEXT_URI, LANG, new String[]{data[0]}))
+        new SpellerAssertions(RestService.getRestService().spellerGetTextRuWithoutOptions(new String[]{data[0]}))
                 .verifyTextResult(Arrays.asList(Arrays.copyOfRange(data, 1, data.length)));
     }
 
