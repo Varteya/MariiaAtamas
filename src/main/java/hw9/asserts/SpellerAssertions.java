@@ -13,23 +13,24 @@ public class SpellerAssertions {
     private SpellerDTO[] spellerTextResult;
     private SpellerDTO[][] spellerTextsResult;
 
-    public SpellerAssertions(SpellerDTO[] response){
+    public SpellerAssertions(SpellerDTO[] response) {
         this.spellerTextResult = response;
     }
-    public SpellerAssertions(SpellerDTO[][] response){
+
+    public SpellerAssertions(SpellerDTO[][] response) {
         this.spellerTextsResult = response;
     }
 
-    public void verifyTextResult (List<String> expectedMistakes){
+    public void verifyTextResult(List<String> expectedMistakes) {
         List<String> actualMistakes = new ArrayList<>();
-        for (SpellerDTO result : spellerTextResult){
+        for (SpellerDTO result : spellerTextResult) {
             actualMistakes.add(result.getWord());
         }
         assertTrue(expectedMistakes.containsAll(actualMistakes)
-                        && actualMistakes.containsAll(expectedMistakes));
+                && actualMistakes.containsAll(expectedMistakes));
     }
 
-    public void verifyTextsResult (List<List<String>> expectedMistakes) {
+    public void verifyTextsResult(List<List<String>> expectedMistakes) {
         for (int i = 0; i < spellerTextsResult.length; i++) {
             List<String> actualMistakes = new ArrayList<>();
             for (SpellerDTO result : spellerTextsResult[i]) {
@@ -39,7 +40,5 @@ public class SpellerAssertions {
                     && actualMistakes.containsAll(expectedMistakes.get(i)));
         }
     }
-
-
 
 }
