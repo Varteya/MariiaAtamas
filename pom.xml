@@ -13,7 +13,7 @@
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
 
-        <testng.version>7.1.0</testng.version>
+        <testng.version>7.7.0</testng.version>
         <maven.surefare.plugin.version>3.0.0-M4</maven.surefare.plugin.version>
         <selenium.version>3.141.59</selenium.version>
         <webdrivermanager.version>3.8.1</webdrivermanager.version>
